@@ -1,0 +1,25 @@
+{
+  "name": "mimetype-to-fontawesome",
+  "version": "1.0.0",
+  "description": "Convert mimetype to appropriate Font Awesome class name.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && mocha",
+    "lint": "snazzy"
+  },
+  "author": {
+    "name": "Loic Mahieu",
+    "email": "mahieuloic@gmail.com"
+  },
+  "keywords": [
+    "mimetype",
+    "font",
+    "awesome",
+    "font-awesome"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "snazzy": "^2.0.1"
+  }
+}
