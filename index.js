@@ -31,7 +31,9 @@ var mapping = [
 
 function match (mimetype, cond) {
   if (Array.isArray(cond)) {
-    return cond.reduce((v, c) => v || match(mimetype, c), false)
+    return cond.reduce(function (v, c) {
+      return v || match(mimetype, c)
+    }, false)
   } else if (cond instanceof RegExp) {
     return cond.test(mimetype)
   } else if (cond === undefined) {
