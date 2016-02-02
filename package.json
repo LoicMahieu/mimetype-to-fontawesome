@@ -1,6 +1,6 @@
 {
   "name": "mimetype-to-fontawesome",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert mimetype to appropriate Font Awesome class name.",
   "main": "index.js",
   "scripts": {
