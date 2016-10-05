@@ -1,4 +1,4 @@
-/*global describe, it*/
+/* global describe, it */
 
 var mimetype2fa = require('..')
 var assert = require('assert')
