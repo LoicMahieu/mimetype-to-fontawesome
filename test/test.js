@@ -55,18 +55,27 @@ describe('Mimetype To FontAwesome', function () {
       assert.equal(mimetype2fa('application/x-tar'), 'file-archive-o')
       assert.equal(mimetype2fa('application/x-zip'), 'file-archive-o')
       assert.equal(mimetype2fa('application/x-gzip'), 'file-archive-o')
+      assert.equal(mimetype2fa('application/x-zip-compressed'), 'file-archive-o')
+      assert.equal(mimetype2fa('application/x-7z-compressed'), 'file-archive-o')
+      assert.equal(mimetype2fa('application/x-rar-compressed'), 'file-archive-o')
     })
 
     it('mimetype: Word', function () {
+      assert.equal(mimetype2fa('application/msword'), 'file-word-o')
       assert.equal(mimetype2fa('application/ms-word'), 'file-word-o')
+      assert.equal(mimetype2fa('application/vnd.openxmlformats-officedocument.wordprocessingml.document'), 'file-word-o')
     })
 
     it('mimetype: Powerpoint', function () {
       assert.equal(mimetype2fa('application/mspowerpoint'), 'file-powerpoint-o')
+      assert.equal(mimetype2fa('application/vnd.ms-powerpoint'), 'file-powerpoint-o')
+      assert.equal(mimetype2fa('application/vnd.openxmlformats-officedocument.presentationml.presentation'), 'file-powerpoint-o')
     })
 
     it('mimetype: Excel', function () {
       assert.equal(mimetype2fa('application/msexcel'), 'file-excel-o')
+      assert.equal(mimetype2fa('application/vnd.ms-excel'), 'file-excel-o')
+      assert.equal(mimetype2fa('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'), 'file-excel-o')
     })
   })
 })

@@ -14,7 +14,11 @@ var mapping = [
     'text/javascript'
   ] ],
   // Archives
-  [ 'file-archive-o', /^application\/(x-)?g?(zip|tar)$/ ],
+  [ 'file-archive-o', [
+    /^application\/x-(g?tar|xz|compress|bzip2|g?zip)$/,
+    /^application\/x-(7z|rar|zip)-compressed$/,
+    /^application\/(zip|gzip|tar)$/
+  ] ],
   // Word
   [ 'file-word-o', [
     /ms-?word/,
@@ -22,9 +26,15 @@ var mapping = [
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
   ] ],
   // Powerpoint
-  [ 'file-powerpoint-o', 'application/mspowerpoint' ],
+  [ 'file-powerpoint-o', [
+    /ms-?powerpoint/,
+    'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+  ] ],
   // Excel
-  [ 'file-excel-o', 'application/msexcel' ],
+  [ 'file-excel-o', [
+    /ms-?excel/,
+    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+  ] ],
   // Default, misc
   [ 'file-o' ]
 ]
