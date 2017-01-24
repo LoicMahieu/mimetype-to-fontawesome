@@ -1,6 +1,8 @@
 
 # mimetype-to-fontawesome
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/LoicMahieu/mimetype-to-fontawesome.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/LoicMahieu/mimetype-to-fontawesome.svg?branch=master)](https://travis-ci.org/LoicMahieu/mimetype-to-fontawesome)
 
 Convert mimetype to appropriate Font Awesome class name.
