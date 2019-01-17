@@ -18,7 +18,7 @@ npm install mimetype-to-fontawesome
 ```
 var mimetype2fa = require('mimetype-to-fontawesome')({ prefix: 'fa-' })
 
-console.log(mimetype2fa('foo/bar')) // fa-file-o
-console.log(mimetype2fa('image/png')) // fa-file-image-o
+console.log(mimetype2fa('foo/bar')) // fa-file
+console.log(mimetype2fa('image/png')) // fa-file-image
 // ... see index.js
 ```
