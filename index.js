@@ -8,7 +8,7 @@ var mapping = [
   [ 'file-video', /^video\// ],
   // Documents
   [ 'file-pdf', 'application/pdf' ],
-  [ 'file-text', 'text/plain' ],
+  [ 'file-alt', 'text/plain' ],
   [ 'file-code', [
     'text/html',
     'text/javascript'
@@ -38,6 +38,10 @@ var mapping = [
   // Default, misc
   [ 'file' ]
 ]
+
+var mappingV4 = {
+  'file-alt': 'file-text'
+}
 
 function match (mimetype, cond) {
   if (Array.isArray(cond)) {
@@ -82,6 +86,9 @@ function mimetype2fa (mimetype, options) {
       icon = options.prefix + icon
     }
     if (icon && options.version < 5) {
+      if (mappingV4[icon]) {
+        icon = mappingV4[icon]
+      }
       icon = icon + '-o'
     }
     return icon
