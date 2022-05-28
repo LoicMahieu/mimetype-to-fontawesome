@@ -46,7 +46,7 @@ describe('Mimetype To FontAwesome', function () {
     })
 
     it('mimetype: Text', function () {
-      assert.strict.equal(mimetype2fa('text/plain'), 'file-text')
+      assert.strict.equal(mimetype2fa('text/plain'), 'file-alt')
     })
 
     it('mimetype: Code', function () {
