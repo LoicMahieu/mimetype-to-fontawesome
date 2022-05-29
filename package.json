@@ -11,6 +11,7 @@
     "name": "Loic Mahieu",
     "email": "mahieuloic@gmail.com"
   },
+  "types": "index.d.ts",
   "keywords": [
     "mimetype",
     "font",
