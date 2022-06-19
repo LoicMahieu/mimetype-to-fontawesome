@@ -1,7 +1,7 @@
 /* global describe, it */
 
-var mimetype2fa = require('..')
-var assert = require('assert')
+const mimetype2fa = require('..')
+const assert = require('assert')
 
 describe('Mimetype To FontAwesome', function () {
   it('Accept a `prefix` option', function () {
@@ -13,7 +13,7 @@ describe('Mimetype To FontAwesome', function () {
   })
 
   describe('With default options', function () {
-    var convert = mimetype2fa({
+    const convert = mimetype2fa({
       prefix: 'fa-'
     })
 
@@ -46,7 +46,7 @@ describe('Mimetype To FontAwesome', function () {
     })
 
     it('mimetype: Text', function () {
-      assert.strict.equal(mimetype2fa('text/plain'), 'file-text')
+      assert.strict.equal(mimetype2fa('text/plain'), 'file-alt')
     })
 
     it('mimetype: Code', function () {
